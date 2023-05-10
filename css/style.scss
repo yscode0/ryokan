@@ -32,4 +32,10 @@ img {
   .h1 {
     font-size: 3rem;
   }
+  .logo {
+    line-height: 1;
+    &--a {
+      display: block;
+    }
+  }
 }
