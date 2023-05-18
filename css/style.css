@@ -23,6 +23,7 @@ ul {
 
 img {
   max-width: 100%;
+  vertical-align: top;
 }
 
 .wrapper {
@@ -31,16 +32,22 @@ img {
 }
 
 .header {
+  position: absolute;
+  top: 0;
+  width: 100vw;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 20px;
 }
-.header .h1 {
-  font-size: 3rem;
-}
-.header .logo {
+.header__logo {
   line-height: 1;
+  width: 200px;
 }
-.header .logo--a {
+.header__logo-link {
   display: block;
+}
+.header__menu {
+  display: flex;
+}
+.header__menu-item + .header__menu-item {
+  margin-left: 30px;
 }/*# sourceMappingURL=style.css.map */

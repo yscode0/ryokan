@@ -19,6 +19,7 @@ ul {
 }
 img {
   max-width: 100%;
+  vertical-align: top;
 }
 .wrapper {
   max-width: 1180px;
@@ -26,16 +27,22 @@ img {
 }
 
 .header {
+  position: absolute;
+  top: 0;
+  width: 100vw;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  .h1 {
-    font-size: 3rem;
-  }
-  .logo {
+  padding: 20px;
+  &__logo {
     line-height: 1;
-    &--a {
+    width: 200px;
+    &-link {
       display: block;
+    }
+  }
+  &__menu {
+    display: flex;
+    &-item + &-item {
+      margin-left: 30px;
     }
   }
 }
